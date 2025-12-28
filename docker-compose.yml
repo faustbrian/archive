@@ -7,14 +7,22 @@
 services:
     php85:
         build: ./docker/php/85
-        mem_limit: 1g
+        deploy:
+            resources:
+                limits:
+                    memory: 1G
         volumes:
             - ~/.composer:/.composer
             - .:/usr/src/myapp
             - ./docker/php/conf.d/error_reporting.ini:/usr/local/etc/php/conf.d/error_reporting.ini
+            - ./docker/php/conf.d/memory.ini:/usr/local/etc/php/conf.d/memory.ini
     profile:
         build: ./docker/php/85
-        mem_limit: 1g
+        deploy:
+            resources:
+                limits:
+                    memory: 1G
         volumes:
             - .:/usr/src/myapp
             - ./docker/php/conf.d/error_reporting.ini:/usr/local/etc/php/conf.d/error_reporting.ini
+            - ./docker/php/conf.d/memory.ini:/usr/local/etc/php/conf.d/memory.ini

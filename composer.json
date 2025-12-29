@@ -19,19 +19,19 @@
   ],
   "require": {
     "php": "^8.5.0",
-    "illuminate/contracts": "^11.0",
-    "illuminate/database": "^11.0",
-    "illuminate/filesystem": "^11.0",
-    "illuminate/support": "^11.0"
+    "illuminate/contracts": "^10.0||^11.0||^12.0",
+    "illuminate/database": "^10.0||^11.0||^12.0",
+    "illuminate/filesystem": "^10.0||^11.0||^12.0",
+    "illuminate/support": "^10.0||^11.0||^12.0"
   },
   "require-dev": {
     "ergebnis/composer-normalize": "^2.48.2",
-    "orchestra/testbench": "^9.15",
+    "orchestra/testbench": "^8.0|^9.0|^10.0",
     "pestphp/pest": "^4.1.1",
     "pestphp/pest-plugin-laravel": "^4.0",
     "pestphp/pest-plugin-type-coverage": "^4.0.3",
-    "symfony/var-dumper": "^7.4.0",
-    "cline/coding-standard": "^1.5.7"
+    "symfony/var-dumper": "^6.0|^7.0",
+    "cline/coding-standard": "^1.6.2"
   },
   "minimum-stability": "stable",
   "prefer-stable": true,
